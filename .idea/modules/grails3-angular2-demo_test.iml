@@ -73,7 +73,6 @@
     <orderEntry type="library" name="Gradle: org.grails:grails-datastore-gorm-support:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-datastore-gorm-hibernate4:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
-    <orderEntry type="library" name="Gradle: org.jboss.logging:jboss-logging-annotations:1.2.0.Beta1" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:4.3.11.Final" level="project" />
     <orderEntry type="library" name="Gradle: net.sf.ehcache:ehcache-core:2.4.3" level="project" />
     <orderEntry type="library" name="Gradle: cglib:cglib:2.2.2" level="project" />
@@ -82,9 +81,8 @@
     <orderEntry type="library" name="Gradle: org.grails:grails-async:3.1.6" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.spockframework:spock-spring:1.0-groovy-2.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mozilla:rhino:1.7R4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.bertramlabs.plugins:asset-pipeline-core:2.8.2" level="project" />
     <orderEntry type="library" name="Gradle: org.spockframework:spock-core:1.0-groovy-2.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.bertramlabs.plugins:asset-pipeline-core:2.8.2" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: org.gebish:geb-spock:0.12.2" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-support:2.47.1" level="project" />
@@ -124,13 +122,9 @@
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.3.1" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-datastore-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-datastore-gorm:5.0.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: dom4j:dom4j:1.6.1" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-datastore-gorm-hibernate-core:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate.common:hibernate-commons-annotations:4.0.5.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-validator:5.2.4.Final" level="project" />
-    <orderEntry type="library" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Gradle: antlr:antlr:2.7.7" level="project" />
-    <orderEntry type="library" name="Gradle: org.jboss:jandex:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Gradle: asm:asm:3.3.1" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-test:2.4.6" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.gpars:gpars:1.2.1" level="project" />
@@ -151,8 +145,8 @@
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.5" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.6.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aspects:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.javascript:closure-compiler:v20151015" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.8.8" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.google.javascript:closure-compiler:v20151015" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.8.8" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-web-gsp:3.1.6" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-web-databinding:3.1.6" level="project" />
@@ -170,19 +164,17 @@
     <orderEntry type="library" name="Gradle: org.apache.tomcat:tomcat-jdbc:8.0.32" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-codecs:3.1.6" level="project" />
     <orderEntry type="library" name="Gradle: io.projectreactor.spring:reactor-spring-context:2.0.7.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Gradle: io.projectreactor:reactor-bus:2.0.7.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Gradle: commons-validator:commons-validator:1.4.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.w3c.css:sac:1.3" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-util:9.2.15.v20160210" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.groovy:groovy-json:2.4.6" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-io:9.2.15.v20160210" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-util:9.2.15.v20160210" level="project" />
     <orderEntry type="library" name="Gradle: org.grails:grails-taglib:3.1.6" level="project" />
-    <orderEntry type="library" name="Gradle: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty:jetty-io:9.2.15.v20160210" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty.websocket:websocket-common:9.2.15.v20160210" level="project" />
+    <orderEntry type="library" name="Gradle: javax.transaction:jta:1.1" level="project" />
     <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.0.b2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-orm:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: javax.validation:validation-api:1.1.0.Final" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml:classmate:1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.codehaus.jsr166-mirror:jsr166y:1.7.0" level="project" />
     <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.0" level="project" />
@@ -211,6 +203,78 @@
     <orderEntry type="library" name="Gradle: org.objenesis:objenesis:2.1" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.9" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.2.15.v20160210" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/1.1.0.Final/jandex-1.1.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/w3c/css/sac/1.3/sac-1.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
   <component name="TestModuleProperties" production-module="grails3-angular2-demo_main" />
 </module>

@@ -56,3 +56,492 @@ code {
     outline:1px solid black;
     background:lightgrey;
 }
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}/*
+*= require bootstrap
+*= require_self
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container > .page-header {
+  padding: 40px 0px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+#navbar a {
+  color: #777;
+}
+#navbar a:visited, a:link {
+  color: #777;
+}
+#navbar a:hover {
+  color: #777;
+}
+#navbar a.router-link-active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.btn {
+    position:absolute;
+    left:80px;
+    outline:1px solid black;
+    background:lightgrey;
+}
+
+
+.product {
+        height: 90vh;
+        background: lightgreen;
+    }
+
+.about {
+    height: 90vh;
+    background:lightsalmon;
+}
+
+.contact {
+    height: 90vh;
+    background:lightskyblue;
+}
+
+.home{
+    height:90vh;
+    background:lightgoldenrodyellow;
+}

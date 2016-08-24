@@ -25,7 +25,7 @@ System.register("home/home.html", [], function(exports_2, context_2) {
     return {
         setters:[],
         execute: function() {
-            exports_2("htmlTemplate", htmlTemplate = "\n\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Home</h1>\n  </div>\n  <p class=\"lead\">Home content...</p>\n</div>\n\n");
+            exports_2("htmlTemplate", htmlTemplate = "\n<div class=\"home\">\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Home</h1>\n  </div>\n  <p class=\"lead\">Home content...</p>\n</div>\n</div>\n");
         }
     }
 });
@@ -85,7 +85,7 @@ System.register("products/products.html", [], function(exports_5, context_5) {
     return {
         setters:[],
         execute: function() {
-            exports_5("htmlTemplate", htmlTemplate = "\n\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Products</h1>\n  </div>\n  <p class=\"lead\">{{ data }}</p>\n</div>\n\n  <div class=\"btn\">\n    <button (click)=\"getProductList()\">Click me!</button>\n    {{ message }}\n  </div>\n\n");
+            exports_5("htmlTemplate", htmlTemplate = "\n<div class=\"product\">\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Products</h1>\n  </div>\n\n</div>\n\n  <div class=\"btn\">\n    <button (click)=\"getProductList()\">Click me!</button>\n    {{message}}\n    <p class=\"lead\">{{ data }}</p>\n  </div>\n</div>\n");
         }
     }
 });
@@ -108,13 +108,12 @@ System.register("products/products.component", ['@angular/core', '@angular/http'
         execute: function() {
             ProductsComponent = (function () {
                 function ProductsComponent(http) {
-                    this.message = '';
                     this.http = http;
                     this.baseUrl = baseUrl;
-                    this.getData();
                 }
                 ProductsComponent.prototype.getProductList = function () {
-                    this.message = "I'll provide you the list of products shortly";
+                    this.message = "Here are the products";
+                    this.getData();
                 };
                 ProductsComponent.prototype.getData = function () {
                     var _this = this;
@@ -126,7 +125,8 @@ System.register("products/products.component", ['@angular/core', '@angular/http'
                 ProductsComponent = __decorate([
                     core_2.Component({
                         selector: 'products',
-                        template: products_html_1.htmlTemplate
+                        template: products_html_1.htmlTemplate,
+                        host: { 'class': 'ng-animate productContainer' }
                     }), 
                     __metadata('design:paramtypes', [http_1.Http])
                 ], ProductsComponent);
@@ -162,7 +162,7 @@ System.register("about/about.html", [], function(exports_8, context_8) {
     return {
         setters:[],
         execute: function() {
-            exports_8("htmlTemplate", htmlTemplate = "\n\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>About</h1>\n  </div>\n  <p class=\"lead\">{{ data }}</p>\n</div>\n  <div ng-controller='TimeCtrl'>\n      <p>{{ clock  | date:'medium'}}</p>\n  </div>\n");
+            exports_8("htmlTemplate", htmlTemplate = "\n<div class=\"about\">\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>About</h1>\n  </div>\n  <p class=\"lead\">{{ data }}</p>\n</div>\n</div>\n");
         }
     }
 });
@@ -235,7 +235,7 @@ System.register("contact/contact.html", [], function(exports_11, context_11) {
     return {
         setters:[],
         execute: function() {
-            exports_11("htmlTemplate", htmlTemplate = "\n\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Contact</h1>\n  </div>\n  <p class=\"lead\">{{ data }}</p>\n</div>\n\n");
+            exports_11("htmlTemplate", htmlTemplate = "\n<div class=\"contact\">\n<!-- Begin page content -->\n<div class=\"container\">\n  <div class=\"page-header\">\n    <h1>Contact</h1>\n  </div>\n  <p class=\"lead\">{{ data }}</p>\n</div>\n</div>\n");
         }
     }
 });

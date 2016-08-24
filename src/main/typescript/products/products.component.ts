@@ -6,24 +6,26 @@ declare var baseUrl: any;
 
 @Component({
     selector: 'products',
-    template: htmlTemplate
+    template: htmlTemplate,
+     host: {'class' : 'ng-animate productContainer'}
 })
 export class ProductsComponent {
     http: Http;
     baseUrl: string;
     data: Object;
-    message='';
+    message:String;
 
     constructor(http: Http) {
         this.http = http;
         this.baseUrl = baseUrl;
 
-        this.getData();
+
 
     }
 
     getProductList(){
-    this.message="I'll provide you the list of products shortly"
+    this.message="Here are the products"
+     this.getData();
     }
 
     getData() {

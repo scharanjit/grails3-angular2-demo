@@ -1,5 +1,5 @@
 export const htmlTemplate = `
-
+<div class="home">
 <!-- Begin page content -->
 <div class="container">
   <div class="page-header">
@@ -7,5 +7,5 @@ export const htmlTemplate = `
   </div>
   <p class="lead">Home content...</p>
 </div>
-
+</div>
 `;

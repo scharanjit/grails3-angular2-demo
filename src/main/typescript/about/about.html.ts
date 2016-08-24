@@ -1,5 +1,5 @@
 export const htmlTemplate = `
-
+<div class="about">
 <!-- Begin page content -->
 <div class="container">
   <div class="page-header">
@@ -7,7 +7,5 @@ export const htmlTemplate = `
   </div>
   <p class="lead">{{ data }}</p>
 </div>
-  <div ng-controller='TimeCtrl'>
-      <p>{{ clock  | date:'medium'}}</p>
-  </div>
+</div>
 `;

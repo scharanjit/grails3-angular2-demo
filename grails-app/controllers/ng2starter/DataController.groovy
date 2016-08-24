@@ -1,10 +1,15 @@
 package ng2starter
 
 import grails.converters.JSON
+import org.dom4j.Text
 
 class DataController {
+    def prod=[
+            'Bajaj','Renault','Audi'
+    ]
+
     def products() {
-        Map data = [data: 'List Of Products']
+        Map data = [data: [prod]]
         render data as JSON
     }
 
