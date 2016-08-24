@@ -8,7 +8,7 @@ export const htmlTemplate = `
   <p class="lead">{{ data }}</p>
 </div>
 
-  <div>
+  <div class="btn">
     <button (click)="getProductList()">Click me!</button>
     {{ message }}
   </div>

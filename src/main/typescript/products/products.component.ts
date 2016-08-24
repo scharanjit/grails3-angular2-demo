@@ -23,7 +23,7 @@ export class ProductsComponent {
     }
 
     getProductList(){
-    this.message="I'll provide you list of components shortly"
+    this.message="I'll provide you the list of products shortly"
     }
 
     getData() {
