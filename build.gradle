@@ -1,0 +1,101 @@
+import com.wiredforcode.gradle.spawn.SpawnProcessTask
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "https://repo.grails.org/grails/core" }
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "http://dl.bintray.com/vermeulen-mp/gradle-plugins" }
+    }
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:$grailsVersion"
+        classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.8.2"
+        classpath "org.grails.plugins:hibernate4:5.0.5"
+        classpath "com.moowork.gradle:gradle-node-plugin:0.12"
+        classpath "com.wiredforcode:gradle-spawn-plugin:0.6.0"
+    }
+}
+
+version "1.0.0"
+group "ng2starter"
+
+apply plugin: "idea"
+apply plugin: "org.grails.grails-web"
+apply plugin: "org.grails.grails-gsp"
+apply plugin: "asset-pipeline"
+apply plugin: "com.moowork.node"
+apply plugin: "com.wiredforcode.spawn"
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.grails:grails-bom:$grailsVersion"
+    }
+    applyMavenExclusions false
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-logging"
+    compile "org.springframework.boot:spring-boot-autoconfigure"
+    compile "org.grails:grails-core"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "org.springframework.boot:spring-boot-starter-tomcat"
+    compile "org.grails:grails-dependencies"
+    compile "org.grails:grails-web-boot"
+    compile "org.grails.plugins:cache"
+    compile "org.grails.plugins:scaffolding"
+    compile "org.grails.plugins:hibernate4"
+    compile "org.hibernate:hibernate-ehcache"
+    console "org.grails:grails-console"
+    profile "org.grails.profiles:web:$grailsVersion"
+    runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.8.2"
+    runtime "com.h2database:h2"
+    testCompile "org.grails:grails-plugin-testing"
+    testCompile "org.grails.plugins:geb"
+    testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
+    testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleWrapperVersion
+}
+
+assets {
+    minifyJs = false
+    minifyCss = true
+}
+
+jar {
+    archiveName 'ng2starter.jar'
+}
+
+task copyNodeModules(type: Copy, dependsOn: npm_install) {
+    from 'node_modules'
+    into 'grails-app/assets/lib'
+}
+
+task compileTypeScript(type: NpmTask, dependsOn: copyNodeModules) {
+    args = ['run', 'tsc']
+}
+
+task wipeDirectories(type: Exec) {
+    executable "sh"
+    args "-c", "rm -rf $projectDir/build;rm -rf $projectDir/node_modules;rm -rf $projectDir/typings; rm -rf $projectDir/grails-app/assets/lib"
+}
+
+task cleanUpPid(type: Delete) {
+    delete '.pid.lock'
+}
+
+task startTscWatch(type: SpawnProcessTask, dependsOn: [copyNodeModules, cleanUpPid]) {
+    command "npm run watch"
+    ready 'Compilation complete. Watching for file changes.'
+}
+
+bootRun.dependsOn startTscWatch
+assetCompile.dependsOn compileTypeScript
+clean.dependsOn wipeDirectories
