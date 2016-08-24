@@ -26,6 +26,9 @@ export const htmlTemplate = `
         <li>
              <a [routerLink]="['/contact']">Contact</a>
         </li>
+        <li>
+              <a [routerLink]="['/form']">Form</a>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

@@ -26,4 +26,6 @@ export class ContactComponent {
                 this.data = res.json()['data'];
             })
     }
+
+
 }

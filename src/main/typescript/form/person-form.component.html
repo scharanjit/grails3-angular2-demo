@@ -1,7 +1,7 @@
 <div class="container">
     <div  [hidden]="submitted">
-        <h1>Contact Form</h1>
-        <form *ngIf="active" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <h1>Person Form</h1>
+        <form *ngIf="active" (ngSubmit)="onSubmit()" #personForm="ngForm">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"
@@ -19,7 +19,7 @@
                        [(ngModel)]="model.alterEgo" name="alterEgo" >
             </div>
             <div class="form-group">
-                <label for="power">Contact Power</label>
+                <label for="power">Person Power</label>
                 <select class="form-control" id="power"
                         required
                         [(ngModel)]="model.power" name="power"
@@ -30,8 +30,8 @@
                     Power is required
                 </div>
             </div>
-            <button type="submit" class="btn btn-default" [disabled]="!contactForm.form.valid">Submit</button>
-            <button type="button" class="btn btn-default" (click)="newContactForm()">New Contact Form</button>
+            <button type="submit" class="btn btn-default" [disabled]="!personForm.form.valid">Submit</button>
+            <button type="button" class="btn btn-default" (click)="newPerson()">New Person</button>
         </form>
     </div>
     <div [hidden]="!submitted">

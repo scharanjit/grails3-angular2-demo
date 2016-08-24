@@ -7,5 +7,6 @@ export const htmlTemplate = `
   </div>
   <p class="lead">{{ data }}</p>
 </div>
+
 </div>
 `;
