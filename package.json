@@ -1,5 +1,5 @@
 {
-  "name": "grails3-angular2-starter",
+  "name": "grails3-angular2-demo",
   "version": "1.0.0",
   "scripts": {
     "tsc": "tsc",
